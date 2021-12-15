@@ -18,4 +18,5 @@
 - Add plugin to zsh according to purpoose as well
 - add docker
 - add good vim 
-- add persoonal tmux
+- add persoonal tmux (in conf files)
+- check VIM awasome https://github.com/vim-awesome/vim-awesome
