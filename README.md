@@ -14,4 +14,5 @@
   - to be continue
 
 
-- add usage stuff
+- add usage page
+- Add plugin to zsh according to purpoose as well
