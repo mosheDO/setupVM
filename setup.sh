@@ -6,7 +6,6 @@ sudo apt-get update
 sudo apt-get install build-essential linux-headers-$(uname -r)
 sudo apt-get install virtualbox-guest-additions-iso -y
 
-
 echo '[*] Install git curl'
 sudo apt install git -y
 sudo apt install curl -y 
@@ -27,11 +26,18 @@ cp .tmux/.tmux.conf.local .
 
 
 sudo apt install python3-pip -y
-sudo apt install gdb -y
 sudo apt install vim -y
+
+if [ $# -eq 0 ]
+then
+  echo "Usage: ..."
+  exit 1
+fi
+
 
 echo '[*] Install pwn tools'
 echo '[*] Install pwn-gdb tools'
+sudo apt install gdb -y
 
 
 git clone https://github.com/pwndbg/pwndbg
