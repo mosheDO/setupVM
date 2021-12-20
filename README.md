@@ -22,3 +22,6 @@
 - check VIM awasome https://github.com/vim-awesome/vim-awesome
 
 add https://github.com/zardus/ctf-tools
+
+
+- pip3 install chepy
