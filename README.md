@@ -20,3 +20,5 @@
 - add good vim 
 - add persoonal tmux (in conf files)
 - check VIM awasome https://github.com/vim-awesome/vim-awesome
+
+add https://github.com/zardus/ctf-tools
