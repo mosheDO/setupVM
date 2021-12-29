@@ -10,10 +10,6 @@ echo '[*] Install git curl'
 sudo apt install git -y
 sudo apt install curl -y 
 
-echo '[*] Install zsh & oh my zsh'
-sudo apt install zsh -y 
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 echo '[*] Install tmux'
 
 sudo apt install tmux -y
@@ -32,7 +28,7 @@ echo '[*] Install vim'
 
 sudo apt install vim -y
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-sh ~/.vim_runtime/install_awesome_vimrc.sh`
+sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 echo '[*] Install ctf-tools'
 
@@ -56,7 +52,15 @@ cd pwndbg
 ./setup.sh
 cd ~
 
-echo '[*] Install stego tools'
 
-wget https://github.com/RickdeJager/stegseek/releases/download/v0.6/stegseek_0.6-1.deb
-sudo apt install ./stegseek_0.6-1.deb
+# echo '[*] Install stego tools'
+
+# wget https://github.com/RickdeJager/stegseek/releases/download/v0.6/stegseek_0.6-1.deb
+# sudo apt install ./stegseek_0.6-1.deb
+
+
+
+echo '[*] Install zsh & oh my zsh'
+sudo apt install zsh -y 
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
