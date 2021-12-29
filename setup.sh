@@ -10,7 +10,8 @@ echo '[*] Install git curl'
 sudo apt install git -y
 sudo apt install curl -y 
 
-echo '[*] Install zsh'
+echo '[*] Install zsh & oh my zsh'
+sudo apt install zsh -y 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo '[*] Install tmux'
