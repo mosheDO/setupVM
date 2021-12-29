@@ -12,7 +12,7 @@ then
     sudo apt install build-essential libtool g++ gcc texinfo curl wget automake autoconf python python-dev git subversion unzip virtualenvwrapper lsb-release -y
 
     echo '[*] Install git curl'
-    sudo apt install git -y
+    sudo apt install ipython -y
     sudo apt install curl -y 
 
     echo '[*] Install tmux'
