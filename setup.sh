@@ -6,6 +6,8 @@ sudo apt-get update
 sudo apt-get install build-essential linux-headers-$(uname -r)
 sudo apt-get install virtualbox-guest-additions-iso -y
 
+sudo apt install build-essential libtool g++ gcc texinfo curl wget automake autoconf python python-dev git subversion unzip virtualenvwrapper lsb-release -y
+
 echo '[*] Install git curl'
 sudo apt install git -y
 sudo apt install curl -y 
