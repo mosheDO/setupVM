@@ -54,6 +54,8 @@ for i in "$@" ; do
 done
 
 if $IS_PWN ; then
+#     wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
+#     echo source ~/.gdbinit-gef.py >> ~/.gdbinit
     ~/ctf-tools/bin/manage-tools -s install gdb
     ~/ctf-tools/bin/manage-tools -s install pwntools
     ~/ctf-tools/bin/manage-tools -s install gef
