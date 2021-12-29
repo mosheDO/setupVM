@@ -39,6 +39,11 @@ then
 
     git clone https://github.com/zardus/ctf-tools.git
     ./ctf-tools/bin/manage-tools setup
+    
+    
+    echo '[*] Install zsh & oh my zsh'
+    sudo apt install zsh -y 
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 IS_PWN=flase 
@@ -49,10 +54,10 @@ for i in "$@" ; do
 done
 
 if $IS_PWN ; then
-    manage-tools -s install gdb
-    manage-tools -s install pwntools
-    manage-tools -s install gef
-    manage-tools -s install rappel
+    ./ctf-tools/bin/manage-tools -s install gdb
+    ./ctf-tools/bin/manage-tools -s install pwntools
+    ./ctf-tools/bin/manage-tools -s install gef
+    ./ctf-tools/bin/manage-tools -s install rappel
 fi
 
 
@@ -80,8 +85,4 @@ fi
 # sudo apt install ./stegseek_0.6-1.deb
 
 
-
-echo '[*] Install zsh & oh my zsh'
-sudo apt install zsh -y 
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
