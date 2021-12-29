@@ -37,22 +37,22 @@ echo '[*] Install ctf-tools'
 git clone https://github.com/zardus/ctf-tools.git
 ./ctf-tools/bin/manage-tools setup
 
-if [ $# -eq 0 ]
-then
-  echo "Usage: ..."
-  exit 1
-fi
+# if [ $# -eq 0 ]
+# then
+#   echo "Usage: ..."
+#   exit 1
+# fi
 
 
-echo '[*] Install pwn tools'
-echo '[*] Install pwn-gdb tools'
-sudo apt install gdb -y
+# echo '[*] Install pwn tools'
+# echo '[*] Install pwn-gdb tools'
+# sudo apt install gdb -y
 
 
-git clone https://github.com/pwndbg/pwndbg
-cd pwndbg
-./setup.sh
-cd ~
+# git clone https://github.com/pwndbg/pwndbg
+# cd pwndbg
+# ./setup.sh
+# cd ~
 
 
 # echo '[*] Install stego tools'
