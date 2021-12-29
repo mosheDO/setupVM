@@ -54,10 +54,10 @@ for i in "$@" ; do
 done
 
 if $IS_PWN ; then
-    ./ctf-tools/bin/manage-tools -s install gdb
-    ./ctf-tools/bin/manage-tools -s install pwntools
-    ./ctf-tools/bin/manage-tools -s install gef
-    ./ctf-tools/bin/manage-tools -s install rappel
+    ~/ctf-tools/bin/manage-tools -s install gdb
+    ~/ctf-tools/bin/manage-tools -s install pwntools
+    ~/ctf-tools/bin/manage-tools -s install gef
+    ~/ctf-tools/bin/manage-tools -s install rappel
 fi
 
 
