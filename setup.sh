@@ -3,39 +3,58 @@
 cd ~
 
 sudo apt-get update
-sudo apt-get install build-essential linux-headers-$(uname -r)
-sudo apt-get install virtualbox-guest-additions-iso -y
 
-sudo apt install build-essential libtool g++ gcc texinfo curl wget automake autoconf python python-dev git subversion unzip virtualenvwrapper lsb-release -y
+if [ $# -eq 0 ]
+then
+    sudo apt-get install build-essential linux-headers-$(uname -r)
+    sudo apt-get install virtualbox-guest-additions-iso -y
 
-echo '[*] Install git curl'
-sudo apt install git -y
-sudo apt install curl -y 
+    sudo apt install build-essential libtool g++ gcc texinfo curl wget automake autoconf python python-dev git subversion unzip virtualenvwrapper lsb-release -y
 
-echo '[*] Install tmux'
+    echo '[*] Install git curl'
+    sudo apt install git -y
+    sudo apt install curl -y 
 
-sudo apt install tmux -y
+    echo '[*] Install tmux'
 
-echo '[*] Install custom conf tmux'
+    sudo apt install tmux -y
 
-git clone https://github.com/gpakosz/.tmux.git
-ln -s -f .tmux/.tmux.conf
-cp .tmux/.tmux.conf.local .
-cp ./setupVM/conf/.tmux.conf.local .
+    echo '[*] Install custom conf tmux'
+
+    git clone https://github.com/gpakosz/.tmux.git
+    ln -s -f .tmux/.tmux.conf
+    cp .tmux/.tmux.conf.local .
+    cp ./setupVM/conf/.tmux.conf.local .
 
 
-sudo apt install python3-pip -y
+    sudo apt install python3-pip -y
 
-echo '[*] Install vim'
+    echo '[*] Install vim'
 
-sudo apt install vim -y
-git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-sh ~/.vim_runtime/install_awesome_vimrc.sh
+    sudo apt install vim -y
+    git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+    sh ~/.vim_runtime/install_awesome_vimrc.sh
 
-echo '[*] Install ctf-tools'
+    echo '[*] Install ctf-tools'
 
-git clone https://github.com/zardus/ctf-tools.git
-./ctf-tools/bin/manage-tools setup
+    git clone https://github.com/zardus/ctf-tools.git
+    ./ctf-tools/bin/manage-tools setup
+fi
+
+IS_PWN=flase 
+for i in "$@" ; do
+    if [[ $i == "pwn" ]] ; then
+       IS_PWN=true 
+    fi
+done
+
+if $IS_PWN ; then
+    manage-tools -s install gdb
+    manage-tools -s install pwntools
+    manage-tools -s install gef
+    manage-tools -s install rappel
+fi
+
 
 # if [ $# -eq 0 ]
 # then
