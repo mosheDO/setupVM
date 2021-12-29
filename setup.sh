@@ -22,7 +22,7 @@ echo '[*] Install custom conf tmux'
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
-
+cp ./setupVM/conf/.tmux.conf.local .
 
 
 sudo apt install python3-pip -y
