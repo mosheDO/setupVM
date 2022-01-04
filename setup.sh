@@ -46,21 +46,21 @@ then
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
-IS_PWN=flase 
-for i in "$@" ; do
-    if [[ $i == "pwn" ]] ; then
-       IS_PWN=true 
-    fi
-done
+# IS_PWN=flase 
+# for i in "$@" ; do
+#     if [[ $i == "pwn" ]] ; then
+#        IS_PWN=true 
+#     fi
+# done
 
-if $IS_PWN ; then
-#     wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
-#     echo source ~/.gdbinit-gef.py >> ~/.gdbinit
-    ~/ctf-tools/bin/manage-tools -s install gdb
-    ~/ctf-tools/bin/manage-tools -s install pwntools
-    ~/ctf-tools/bin/manage-tools -s install gef
-    ~/ctf-tools/bin/manage-tools -s install rappel
-fi
+# if $IS_PWN ; then
+# #     wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
+# #     echo source ~/.gdbinit-gef.py >> ~/.gdbinit
+#     ~/ctf-tools/bin/manage-tools -s install gdb
+#     ~/ctf-tools/bin/manage-tools -s install pwntools
+#     ~/ctf-tools/bin/manage-tools -s install gef
+#     ~/ctf-tools/bin/manage-tools -s install rappel
+# fi
 
 
 # if [ $# -eq 0 ]
