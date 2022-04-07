@@ -40,10 +40,12 @@ then
     git clone https://github.com/zardus/ctf-tools.git
     ./ctf-tools/bin/manage-tools setup
     
-    
-    echo '[*] Install zsh & oh my zsh'
-    sudo apt install zsh -y 
-    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    if [ -d ~/.oh-my-zsh ]
+    else
+        echo '[*] Install zsh & oh my zsh'
+        sudo apt install zsh -y 
+        sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    fi
 fi
 
 # IS_PWN=flase 
