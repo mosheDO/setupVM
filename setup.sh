@@ -3,6 +3,7 @@
 cd ~
 
 sudo apt-get update
+sudo apt-get install xclip  -y
 
 if [ $# -eq 0 ]
 then
