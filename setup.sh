@@ -15,6 +15,7 @@ then
     echo '[*] Install git curl'
     sudo apt install ipython -y
     sudo apt install curl -y 
+    pip3 install chepy
 
     echo '[*] Install tmux'
 
