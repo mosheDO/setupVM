@@ -10,10 +10,10 @@ then
     sudo apt-get install build-essential linux-headers-$(uname -r)
     sudo apt-get install virtualbox-guest-additions-iso -y
 
-    sudo apt install build-essential libtool g++ gcc texinfo curl wget automake autoconf python python-dev git subversion unzip virtualenvwrapper lsb-release -y
+    sudo apt install build-essential libtool g++ gcc texinfo curl wget automake autoconf python3 python-dev git subversion unzip virtualenvwrapper lsb-release -y
 
     echo '[*] Install git curl'
-    sudo apt install ipython -y
+    sudo apt install ipython3 -y
     sudo apt install curl -y 
     pip3 install chepy
 
