@@ -1,1 +1,2 @@
 :set paste
+:set number
