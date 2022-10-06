@@ -46,6 +46,9 @@ then
     git clone https://github.com/zardus/ctf-tools.git
     ./ctf-tools/bin/manage-tools setup
      
+    git clone https://github.com/pwndbg/pwndbg
+    cd pwndbg
+    ./setup.sh
     
     if [ -d ~/.oh-my-zsh ]; then
         echo "oh-my-zsh is installed"
