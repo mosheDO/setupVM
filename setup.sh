@@ -7,7 +7,7 @@ sudo apt-get install xclip  -y
 
 if [ $# -eq 0 ]
 then
-    sudo apt-get install build-essential linux-headers-$(uname -r)
+    sudo apt-get install build-essential linux-headers-$(uname -r) -y
     sudo apt-get install virtualbox-guest-additions-iso -y
 
     sudo apt install build-essential libtool g++ gcc texinfo curl wget automake autoconf python3 python3-dev git subversion unzip libedit-dev nasm virtualenvwrapper lsb-release -y
