@@ -14,6 +14,8 @@ then
     sudo apt-get install ruby-full -y
     sudo gem install one_gadget
     sudo apt install binwalk -y 
+    sudo apt install elfutils -y 
+     
     
     echo '[*] Install git curl'
     sudo apt install ipython3 -y
