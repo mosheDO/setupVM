@@ -37,6 +37,8 @@ then
     python3 -m pip install --upgrade pwntools
 
     wget https://github.com/io12/pwninit/releases/download/3.2.0/pwninit -P ~/.local/bin/
+    chmod +x ~/.local/bin/pwninit
+    
     echo '[*] Install vim'
 
     sudo apt install vim -y
