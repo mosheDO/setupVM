@@ -15,6 +15,7 @@ then
     sudo gem install one_gadget
     sudo apt install binwalk -y 
     sudo apt install elfutils -y 
+    sudo apt install patchelf -y 
      
     
     echo '[*] Install git curl'
