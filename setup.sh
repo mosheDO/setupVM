@@ -13,6 +13,7 @@ then
     sudo apt install build-essential libtool  tree g++ gcc texinfo curl wget automake autoconf python3 python3-pip python3-dev libssl-dev libffi-dev subversion unzip libedit-dev nasm virtualenvwrapper lsb-release -y
     sudo apt-get install ruby-full -y
     sudo gem install one_gadget
+    sudo gem install seccomp-tools
     sudo apt install binwalk -y 
     sudo apt install elfutils -y 
     sudo apt install patchelf -y 
