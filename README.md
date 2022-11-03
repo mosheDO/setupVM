@@ -4,6 +4,7 @@
 ### How to install
 
 - `wget https://github.com/mosheDO/setupVM/archive/refs/heads/master.zip`
+- `unzip master.zip`
 - `cd setupVM-master/`
 - `sudo setup.sh`
 
