@@ -1,6 +1,23 @@
 # setupVM
 
 
+### How to install
+
+- `wget https://github.com/mosheDO/setupVM/archive/refs/heads/master.zip`
+- `cd setupVM-master/`
+- `sudo setup.sh`
+
+if you see errors it might be the lock so open it
+
+```
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock*
+
+sudo dpkg --configure -a
+
+sudo apt update
+```
 
 ### ToDo
 
