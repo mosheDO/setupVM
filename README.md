@@ -5,8 +5,7 @@
 
 - `wget https://github.com/mosheDO/setupVM/archive/refs/heads/master.zip`
 - `unzip master.zip`
-- `cd setupVM-master/`
-- `sudo setup.sh`
+- `sudp ./setupVM-master/setup.sh`
 
 if you see errors it might be the lock so open it
 
