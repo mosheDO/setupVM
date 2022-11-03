@@ -10,7 +10,7 @@ sudo apt-get install xclip  -y
 sudo apt-get install build-essential linux-headers-$(uname -r) -y
 sudo apt-get install virtualbox-guest-additions-iso -y
 
-sudo apt install build-essential libtool  tree g++ gcc texinfo curl wget automake autoconf python3 python3-pip python3-dev libssl-dev libffi-dev subversion unzip libedit-dev nasm virtualenvwrapper lsb-release -y
+sudo apt install build-essential libtool  tree g++ gcc texinfo curl wget automake autoconf python3.10 python3.10-pip python3.10-dev libssl-dev libffi-dev subversion unzip libedit-dev nasm virtualenvwrapper lsb-release -y
 sudo apt-get install ruby-full -y
 sudo gem install one_gadget
 sudo gem install seccomp-tools
