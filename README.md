@@ -22,7 +22,7 @@ sudo apt update
 ### ToDo
 
 - add ghidra with auto tool
-
+- add support for ubuntu 16 (not working OOB pwndbg & pwntools)
 - add usage page
 - Add plugin to zsh according to purpoose as well
 - add docker   https://docs.docker.com/engine/install/ubuntu/
