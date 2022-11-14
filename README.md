@@ -21,15 +21,7 @@ sudo apt update
 
 ### ToDo
 
-
-- add variuos optioon according to the purpoese
-  - dev
-  - ctf
-  - re
-  - pwn
-  - osint
-  - to be continue
-
+- add ghidra with auto tool
 
 - add usage page
 - Add plugin to zsh according to purpoose as well
