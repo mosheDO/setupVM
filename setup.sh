@@ -67,9 +67,7 @@ if [ -d ~/.oh-my-zsh ]; then
 else
     echo '[*] Install zsh & oh my zsh'
     sudo apt install zsh -y 
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-    echo 'export PATH="~/.local/bin/:$PATH"' >> .zshrc
-    chsh -s $(which zsh)
+    echo '[*] Now install oh my zsh run this command `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 fi
 source .zshrc
 
