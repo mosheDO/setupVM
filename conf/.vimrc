@@ -61,3 +61,6 @@ augroup ProjectDrawer
     autocmd!
     autocmd VimEnter * :Lexplore
 augroup END
+
+
+map <C-m> :Lexplore<CR>
