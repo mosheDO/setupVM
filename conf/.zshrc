@@ -67,6 +67,8 @@ plugins=(
   git
   tmux
   web-search
+  colored-man-pages
+  z
 )
 
 source $ZSH/oh-my-zsh.sh
